@@ -19,7 +19,9 @@ Before running ANOVA, the following steps are performed:
 2.	Data Types: Ensure Fertilizer and Myco are treated as categorical variables as.factor(df$Fertilizer) and as.factor(df$Myco).
 3.	Model Assumptions:
 •	Fit linear model (lm).
+
 •	Check residual diagnostic plots (Plots 1 and 2: Residuals vs Fitted, Normal Q-Q). Plot 1: Values should be shattered across 0, plot 2: values should form a diagonal
+
 •	Test normality using Shapiro-Wilk test (shapiro.test).
 ## Statistical Analysis and Effects
 ANOVA was conducted alongside Eta-squared (2) for effect sizes and Tukey HSD for post-hoc pairwise comparisons.
